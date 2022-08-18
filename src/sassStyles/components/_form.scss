@@ -1,0 +1,92 @@
+.form {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    align-items: center;
+
+    &__group {
+        margin-bottom: 4rem;
+        position: relative;
+
+        &_primary {
+            width: 100%;
+        }
+
+        &_secondary {
+            width: 40%;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: -2.5rem;
+        color: $color-white;
+        font-size: 1.5rem;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+
+        &_desc {
+            color: rgba($color-white, .2);
+            text-transform: lowercase;
+            top: 25%;
+            left: -3rem;
+        }
+
+    }
+
+    &__input {
+        height: 3.8rem;
+        width: 100%;
+        border-radius: $border-radius-small;
+        border: none;
+        font-family: inherit;
+        // font-weight: 600;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        transition: all .2s;
+
+        &:focus {
+            outline: 2px solid $color-secondary;
+        }
+
+        &_text {
+            padding: 1rem;
+        }
+
+        &_number {
+            text-align: center;
+        }
+
+
+    }
+
+    &__button {
+        width: 100%;
+        border-radius: $border-radius-small;
+        border: none;
+        padding: 1.5rem;
+        box-shadow: 5px 10px 20px 1px rgba(black, .3);
+        cursor: pointer;
+        font-weight: 600;
+        color: $color-white;
+        font-family: inherit;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        background-color: $color-secondary;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 10px 10px 20px 10px rgba(black, .2);
+
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+}

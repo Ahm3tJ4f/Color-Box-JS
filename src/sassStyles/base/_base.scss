@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-sans-v11-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/dm-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/dm-sans-v11-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/dm-sans-v11-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/dm-sans-v11-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/dm-sans-v11-latin-regular.svg#DMSans') format('svg');
+    /* Legacy iOS */
+}
+
+html {
+    font-size: 60%;
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    html {
+        font-size: 35%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    // font-weight: 200;
+    background-color: $color-grey-light;
+    // padding: 2rem;
+}

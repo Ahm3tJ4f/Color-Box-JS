@@ -1,0 +1,13 @@
+.BoxList {
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+}
+
+.box-canvas {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+}
