@@ -37,7 +37,7 @@ class BoxList extends Component {
     this.setState((state) => {
       return {
         boxList: state.boxList.filter((box) => {
-          return box.key !== id;
+          return box.id !== id;
         }),
       };
     });
